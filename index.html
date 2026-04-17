@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>letoxin | personal profile</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;500&family=Montserrat:wght@300;500;700&display=swap');
+
+        :root {
+            --accent: #c77dff;
+            --text: #ffffff;
+            --glass: rgba(255, 255, 255, 0.05);
+            --item-bg: rgba(255, 255, 255, 0.03);
+        }
+
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: 'Montserrat', sans-serif;
+            background: radial-gradient(circle at top right, #1a1a2e, #0d0d1a);
+            color: var(--text);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .glass-card {
+            background: var(--glass);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 40px;
+            padding: 50px;
+            max-width: 650px;
+            width: 100%;
+            box-shadow: 0 15px 45px rgba(0, 0, 0, 0.5);
+        }
+
+        header { text-align: center; margin-bottom: 40px; }
+
+        h1 {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 3rem;
+            margin: 0;
+            letter-spacing: -2px;
+            background: linear-gradient(135deg, #fff 30%, var(--accent) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .tg-link {
+            color: var(--accent);
+            text-decoration: none;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 1.1rem;
+            opacity: 0.7;
+            transition: 0.3s;
+        }
+
+        .tg-link:hover { opacity: 1; letter-spacing: 1px; }
+
+        .about-section {
+            line-height: 1.8;
+            font-weight: 300;
+            font-size: 1.05rem;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .about-section p { margin-bottom: 20px; }
+
+        b { color: var(--accent); font-weight: 500; }
+
+        .highlights {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .item {
+            background: var(--item-bg);
+            padding: 15px;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            font-size: 0.9rem;
+            transition: 0.3s ease;
+        }
+
+        .item:hover {
+            background: rgba(255, 255, 255, 0.08);
+            transform: translateY(-5px);
+        }
+
+        .item span { color: var(--accent); display: block; margin-bottom: 5px; font-weight: 700; }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.75rem;
+            opacity: 0.3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="glass-card">
+    <header>
+        <h1>letoxin</h1>
+        <a href="https://t.me/loofil" class="tg-link">@loofil</a>
+    </header>
+
+    <div class="about-section">
+        <p>
+            привет! я летокссин. учусь в школе и постоянно чем-то занят. мой мир — это смесь технологий, скилла и уютных домашних будней.
+
+что я люблю и умею:
+
+it & софт: информатика — мой главный краш. обожаю копаться в прошивках телефонов и настраивать системы так, чтобы они летали.
+
+gaming: если видишь, что я затих, значит, я снова штурмую Geometry Dash. Clubstep и Clutterfunk уже в копилке, а сейчас тренируюсь на кастомных уровнях с дикими концовками.
+
+lifestyle: недавно вернулся из Таиланда, так что вайб путешествий ещё со мной. а дома меня всегда ждёт Лео — мой 10-месячный бенгальский напарник по шалостям 😼.
+
+food: за порцию хороших пельменей готов на всё, хех.
+
+мои девайсы:
+сижу на Windows 11, пользуюсь Galaxy S25 Ultra, а в голове — куча идей для новых прошивок и игр.
+
+всегда открыт к общению про железо, игры или просто за жизнь. (´｡• ᵕ •｡`)        </p>
+        <p>
+            в свободное время я превращаю свои девайсы в идеальные инструменты: прошивка <b>Samsung Galaxy S25 Ultra</b> и работа с системами — это мой вид медитации. а когда хочется драйва, я иду покорять уровни в <b>Geometry Dash</b>.
+        </p>
+    </div>
+
+    <div class="highlights">
+        <div class="item">
+            <span>tech & software</span>
+            информатика, кастомные прошивки и оптимизация Windows 11.
+        </div>
+        <div class="item">
+            <span>gaming skill</span>
+            прохождение Clubstep, Clutterfunk и тренировки на кастомках.
+        </div>
+        <div class="item">
+            <span>pets & life</span>
+            бенгальский кот лео (10 месяцев) — мой главный хелпер.
+        </div>
+        <div class="item">
+            <span>favorite things</span>
+            путешествия по Таиланду и идеальная порция пельменей.
+        </div>
+    </div>
+
+    <footer>
+        2026 // created for letoxin by naivi :3
+    </footer>
+</div>
+
+</body>
+</html>
